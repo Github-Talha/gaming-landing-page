@@ -32,6 +32,8 @@ body {
 }
 .nav-items ul li {
   margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 /* header hero section styles  */
@@ -265,6 +267,15 @@ body {
 .footer-links a i {
   color: #fff;
 }
+.footer-links a {
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer-links a:hover,
+.nav-items ul li:hover {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  color: #fff;
+}
 /*-------------------
   mobile responsive  
 --------------------*/
@@ -349,5 +360,25 @@ body {
   .box-row-1,
   .box-row-2 {
     flex-wrap: wrap;
+  }
+
+  /* footer section mobile responsive  */
+  /* .footer-info,
+  .footer-links,
+  .footer-privacy {
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+  } */
+
+  .footer-info,
+  .footer-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .footer-privacy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
